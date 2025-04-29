@@ -1,0 +1,44 @@
+seg 07 abr 2025 00:05:41 
+
+maciel@worknote: chapter0$ date
+dom 06 abr 2025 23:58:43 -03
+maciel@worknote: chapter0$ pwd
+/home/maciel/studys/front/js/eloquent/chapter0
+maciel@worknote: chapter0$ ls
+ console-export-2025-4-2_20-28-31.txt       notes      resumo~
+ factorial.js                               notes~     script.js
+'Introdução __ Eloquent JavaScript.pdf'     programs   shell
+'Introduction __ Eloquent JavaScript.pdf'   resumo     shell2
+maciel@worknote: chapter0$ 
+maciel@worknote: chapter0$ node factorial.js 8
+maciel@worknote: chapter0$ node factorial.js 
+maciel@worknote: chapter0$ 
+maciel@worknote: chapter0$ 
+maciel@worknote: chapter0$ node factorial.js 
+40320
+maciel@worknote: chapter0$ 
+maciel@worknote: chapter0$ 
+maciel@worknote: chapter0$ node factorial.js 
+8
+7
+6
+5
+4
+3
+2
+1
+0
+40320
+maciel@worknote: chapter0$ 
+maciel@worknote: chapter0$ 
+maciel@worknote: chapter0$ pwd
+/home/maciel/studys/front/js/eloquent/chapter0
+maciel@worknote: chapter0$ ls
+ console-export-2025-4-2_20-28-31.txt       notes      resumo~
+ factorial.js                               notes~     script.js
+'Introdução __ Eloquent JavaScript.pdf'     programs   shell
+'Introduction __ Eloquent JavaScript.pdf'   resumo     shell2
+maciel@worknote: chapter0$ date
+seg 07 abr 2025 00:04:45 -03
+maciel@worknote: chapter0$ 
+

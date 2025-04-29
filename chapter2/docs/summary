@@ -1,0 +1,367 @@
+------------------------------------------------------
+      Eloquente JavaScript 
+  
+         Third Edition
+                  
+         Marijn Haverbeke
+
+
+Chapter 2 - Estrutura do Program ( Program Structure )
+------------------------------------------------------
+ 
+  Estrutura do Programa ( Program Structure )
+  
+    Expressões e declarações ( Expressions and statements )
+    
+      Expressão é um fragmento de código que produz um valor
+      
+        22
+        "psychoanalysis"
+      
+        Se uma expressão corresponde a um fragmento de frase, 
+          uma declaração JavaScript corresponde a uma frase completa. 
+          Um programa é uma lista de declarações.
+          
+        1;
+        !false;     
+        
+        Estes são exemplos de programas simples. 
+        Inúteis ... Mas programas!
+      
+      Efeitos colaterais
+      
+      Ponto-e-vírgula ; ( . , = ponto e vírgula )( ; = ponto-e-vírgula )
+    
+        Pode ser omitido na maioria dos casos.
+        Mas em alguns a linha seguinte pode ser interpretada 
+          como fazendo parte da mesma instrução
+        
+        
+    
+      Ligações ( Bindings ) ( variáveis )
+    
+        var caught = 5 * 5;
+      
+        ( let e const )
+      
+        var ten = 10;
+        console.log(ten * ten);
+        // -> 100
+        
+        
+      
+    Nomes de ligações ( Binding names ) ( Nomeação de variáveis )    
+    
+      *** regras:
+          
+          * Pode ser qualquer palavra (menos as reservadas);
+          * Não pode haver espaços incluídos;
+          * Dígitos podem também ser parte do nome;
+          * Mas um nome não pode iniciar com um dígito;
+          * Não pode incluir caracteres especiais, 
+            exceto por $ (dollar) e _ (underline);
+          * Aceita palavras acentuadas e caracteres especiais 
+            da língua portuguesa (como Açaí)
+            
+          
+    Transitoriedade dos valores apontados por uma variável
+    Uma variável não contém um valor ela o agarra temporariamente
+    
+      let mood = "light";
+      console.log(mood);
+      // -> light
+      
+      mood = "dark";
+      console.log(mood);
+      // -> dark
+          
+    O ambiente ( The enviroment )
+    
+      As variáveis existentes em um determinado momento
+            
+    
+    Funções ( Functions )
+    
+        
+    A função console.log ( The function console.log )
+    
+    
+    Valores de retorno ( Return values )
+    
+      console.log(Math.max( 2,4 ));
+      // → 4
+    
+      console.log(Math.min( 2 , 4 ) + 100 );
+      // → 102
+    
+
+  Controle de fluxo ( Control flow )
+  
+
+  Linha reta 
+  
+    Linear
+    Um comando seguido do outro            
+
+    let theNumber = Number(prompt("Pick a number"));
+    console.log("This number is, theNumber);
+    console.log("Your number is the square root of " +
+            theNumber * theNumber);
+    console.log("Your number is the cube root of " +
+            theNumber ** 3);
+            
+  
+  Condicional
+  
+    let theNumber = Number(prompt("Pick a number"));
+    if (Number.isNaN(theNumber) {
+      console.log("This number is, theNumber);
+      console.log("Your number is the square root of " +
+            theNumber * theNumber);
+      console.log("Your number is the cube root of " +
+            theNumber ** 3);
+    }            
+            
+  
+  Bi-condicional
+    
+  
+  Tri-condicional
+  
+  
+  Multicondicional
+  
+  
+  Switch
+  
+    
+  
+  
+  Loops 
+  
+    WHILE e 
+    
+    DO  
+    
+
+  Recuo de código 
+  
+    if (false != true) { 
+      console.log( "Isso faz sentido." );
+      if ( 1 < 2 ) { 
+        console.log( "Nenhuma surpresa aí." ); 
+      } 
+    }
+    
+    FOR
+  
+  
+  Breaking Out of a Loop ( Saindo de um Loop )
+  
+  
+  Updating bindings succinctly ( Atualizando as variáveis de forma sucinta )
+  
+    counter = counter + 1;
+    counter += 1;
+    
+    O mesmo serve para os outros operadores aritméticos ( -, *, / )
+        
+    counter++;
+    counter--;
+    
+  
+          
+    
+  
+    
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

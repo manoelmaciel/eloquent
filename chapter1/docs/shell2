@@ -1,0 +1,50 @@
+seg 10 jun 2024 14:51:12 
+
+maciel@worknote:~$ node
+Welcome to Node.js v20.14.0.
+Type ".help" for more information.
+
+> "A newline character is written like \"\\n\"."
+'A newline character is written like "\\n".'
+
+> "A newline character is written like \"\n\"."
+'A newline character is written like "\n".'
+
+> "A newline character is \nwritten like \"\n\"."
+'A newline character is \nwritten like "\n".'
+
+> "con" + "cat" + "e" + "nate"
+'concatenate'
+
+> `Half of 100 is ${100 / 2}`
+'Half of 100 is 50'
+
+> Half of 100 is ${100 / 2}
+Half of 100 is ${100 / 2}
+     ^^
+
+Uncaught SyntaxError: Unexpected identifier 'of'
+> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

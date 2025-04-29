@@ -1,0 +1,472 @@
+sex 07 jun 2024 12:42:38 
+sáb 22 jun 2024 10:59:34 
+qui 01 ago 2024 19:26:12 
+sex 02 ago 2024 18:20:19 
+seg 07 abr 2025 11:01:01 
+
+Capítulo 1 - Valores, Tipos e Operadores
+             (Values, Types, and Operators)
+
+    Abaixo da superfície da máquina, o programa se move. 
+    Sem esforço, ele se expande e se contrai. 
+    Em grande harmonia, os elétrons se dispersam e se reagrupam. 
+    As formas no monitor são apenas ondulações na água. 
+    A essência fica invisível abaixo.
+
+    -> Master Yuan-Ma, The Book of Programming
+    
+  Valores (values)
+  
+    *** Cada valor tem um tipo que determina seu papel. 
+          Alguns valores são números, 
+          alguns valores são pedaços de texto, 
+          alguns valores são funções 
+          e assim por diante.
+      
+    *** O restante deste capítulo apresenta os elementos atômicos dos programas 
+          JavaScript, ou seja, 
+            os tipos de valor simples e 
+            os operadores que podem atuar em tais valores. 
+        
+    *** Existem seis tipos básicos de valores no JavaScript: 
+          números, strings, 
+          Booleanos, objetos, funções e 
+          valores indefinidos.
+      
+  
+  Números (numbers)
+  
+    13 ( inteiro )
+    
+    9.81 ( fracionário )
+    
+    2.998e8 ( notação científica )
+    ( isso é 2.998 x 10 elevado a 8 que é igual a 299.800.000 )
+    
+  
+    *** Cálculos com números inteiros (também chamados de integers) menores que 
+      9 quatrilhões são garantidos para serem sempre precisos. Infelizmente, 
+      cálculos com números fracionários geralmente não são. Muitos números perdem 
+      alguma precisão quando apenas 64 bits estão disponíveis para armazená-los. 
+      Isso é uma pena, mas causa problemas práticos apenas em situações específicas. 
+      O importante é estar atento a isso e tratar os números digitais fracionários 
+      como aproximações, não como valores precisos.         
+      
+    Aritmética
+    
+      + ( adição )
+      
+      - ( subtração )
+      
+      * ) multiplicação ) e
+      
+      / ( divisão )
+      
+      % ( módulo ) ( resto da divisção inteira )
+    
+      Precedência
+    
+        100 + 4 * 11 = 144
+      
+        (100 + 4) * 11 1144
+        
+        
+      Resto/módulo
+      
+        314 % 100 = 14
+        
+        144 % 12 = 0
+        
+
+    Números especiais:
+    
+      Infinity e -Infinity  
+      
+      NaN (not a number)
+      
+
+  Strings
+  
+    `Down on the ocean`
+    "Lie on the ocean"
+    'Float on the ocean'
+    
+    caractere de escape \ (escaping)
+    
+      \" - não termina a estring, faz parte dela
+      \n - nova linha
+      \t - tabulação
+      
+
+    Observe a seguinte string:
+
+      "This is the first line\nAnd this is the second"
+
+    O texto acima será exibido desta forma:
+
+      This is the first line
+      And this is the second
+
+    Este é um exemplo do uso do \n
+    
+ 
+    Como colocar uma barra invertida no texto:
+    
+      É assim que a string 
+      
+        “A newline character is written like "\n".” 
+      
+      pode ser expressada:
+
+        "A newline character is written like \"\\n\"."
+        
+
+    Padrão Unicode   
+    
+      Esse padrão atribui um número a praticamente todos 
+      os caracteres que você precisaria, incluindo caracteres 
+      do grego, árabe, japonês, armênio e assim por diante.     
+      
+      O JavaScript usa 16 bits para representar uma string
+      Mas o padrão Unicode usa 32 bits.
+      Por isso, alguns caracteres, como muitos emojis,
+      ocupam duas posições de caracteres em strings JavaScript.
+      
+    Concatenção de strings ( concatenate )    
+    
+      "con" + "cat" + "e" + "nate"
+      
+    Funções de string
+    
+      Mais a frente ... 
+      
+    Templates literais
+    
+      Strings com aspas invertidas (acento grave)
+      
+      Podem fazer mais alguns truques
+      
+        `Half of 100 is ${100 / 2}`        
+      
+  Operadores unários ( Unary operators )  
+  
+    typeof 
+    - (menos)   
+    ! (exclamação) 
+    
+  Operadores que usam dois valores são chamado binários
+  Os que usam só um são chamados unários
+  
+  O - (menos) pode ser tanto binário quanto unário
+  
+  console.log(-(10 - 2);
+  // -> -8
+  
+  Mais sobre console.log no próximo capítulo      
+      
+  Valores booleanos (Boolean values)
+  
+    true e false    
+      
+    Comparação
+    
+      console.log(3 > 2);
+      // -> true  
+      
+      console.log(3 < 2);
+      // -> false  
+      
+      Strings podem ser comparadas da mesma forma
+      
+      console.log("Aardvark" < "Zoroaster");
+      // -> true
+
+    /* *** Operadores de comparação                         */
+        
+      ` <  >  >=  <=  ==  !=  ===  !== `
+        
+        console.log("Itchy" != "Scratchy")
+        // → true
+        
+        console.log("Apple" == "Orange")
+        // → false
+
+    /* *** O único operador que não é igual a si mesmo é o NaN  */
+        
+      ` NaN `
+        
+        console.log(NaN == NaN);
+        // -> false
+
+
+    console.log("Operadores lógicos ( logical operators )"); 
+    /* *** Operadores lógicos (logical operators)
+        
+        &&   ||   !                                               */
+        
+      /* O operador && (And) representa o E lógico. 
+         É um operador binário e seu resultado é verdadeiro somente se 
+         ambos os valores dados a ele forem verdadeiros. */
+        
+        console.log('&& And(E lógico)');
+        console.log(true && true);
+        // -> true
+
+        console.log(true && false);
+        // -> false
+
+        console.log(false && true);
+        // -> false
+
+        console.log(false && false);
+        // -> false
+
+      /* O operador || (Ou) representa o E lógico. 
+         É um operador binário e seu resultado é falso somente se 
+         ambos os valores dados a ele forem falsos. */
+        
+        console.log('|| Or (Ou lógico)');
+        console.log(false || false);
+        // -> false
+
+        console.log(false || true);
+        // -> true
+
+        console.log(true || false);
+        // -> true
+
+        console.log(true || true);
+        // -> true
+
+ 
+        /* O Não é escrito como um ponto de exclamação !. 
+           É um operador unário que inverte o valor dado a ele. 
+           !true produz false e !false resulta em true. */
+
+        console.log('! Not (Não lógico)');
+        console.log(!true);
+        // -> false
+
+        console.log(!false);
+        // -> true
+
+        Nem sempre é obvio quando os parêntese são necessários. 
+        A ordem foi escolhida de forma que em expressões típicas
+        como a seguinte, seja necessário o mínimo de parênteses:
+        
+          1 + 1 == 2 && 10 * 10 > 50
+          
+
+        O último operador lógico que discutirei não é unário, 
+        nem binário, mas ternário, operando em três valores. 
+        É escrito com um ponto de interrogação e dois pontos, desta forma:
+
+          console.log(true ? 1 : 2);
+          // → 1
+          console.log(false ? 1 : 2);
+          // → 2
+ 
+    // Operador condicional
+    // Operardor lógico ternário ( resultadoLógico ? retornoTrue : retornoFalse )
+    
+        console.log(true ? 'retornoTrue' : 'retornoFalse');
+        // → 1
+        console.log(false ? 'retornoTrue' : 'retornoFalse');
+        // → 2
+        
+    // Valores vazios
+           
+        undefined 
+           
+        null
+           
+        /* A diferença de significado entre undefined e null é um acidente do 
+           design do JavaScript e não importa na maioria das vezes. Nos casos 
+           em que você realmente precisa se preocupar com esses valores, 
+           recomendo tratá-los como intercambiáveis. */
+              
+          var algo;
+          console.log(algo);                        
+          // -> aparetemente não faz nada
+            
+
+     // Conversão automática de tipo
+
+        console.log(8 * null)
+        // → 0
+        console.log("5" - 1)
+        // → 4
+        console.log("5" + 1)
+        // → 51
+        console.log("five" * 2)
+        // → NaN
+        console.log(false == 0)
+        // → true
+
+
+        console.log(null == undefined);
+        // → true
+        console.log(null == 0);
+        // → false
+
+
+      // Curto-circuito de operadores lógicos
+      // avaliação de curto-circuito (short-circuit evaluation)
+      
+        || (or)
+      
+        console.log(null || "user");
+        // -> user
+        
+        console.log("manoelmaciel" || "user");
+        // -> manoelmaciel
+        
+        Ele avalia o primeiro operando.
+        se for TRUE, ele nem olha para o segundo.
+        Não importa o seu valor para o resultado final: vai ser TRUE! 
+
+        
+        && (and)
+        
+        console.log(false && "qualquerCoisa");
+        // -> false
+                
+        Ele avalia o primeiro operando.
+        se for FALSE, ele nem olha para o segundo.
+        Não importa o seu valor para o resultado: vai ser FALSE!
+        
+        Falta identificar um uso prático para esse caso!
+        
+
+
+        O operrador ?? 
+        
+                
+
+  Resumo
+
+    Examinamos quatro tipos de valores JavaScript neste capítulo: 
+    
+      números, strings, booleanos e valores indefinidos.
+
+    Esses valores são criados digitando seu nome ou valor 
+    
+      13, "abc", true, null ou undefined, Infinity, -Infinity e NaN 
+       
+    Você pode combinar e transformar valores com operadores. 
+    
+    Vimos operadores binários para aritmética 
+      
+      +, -, *, / e %  
+        
+    concatenação de strings 
+    
+      ( + ) 
+      
+    comparação 
+    
+      ==, !=, ===, !==, <, >, <=, >= 
+      
+    e lógica 
+    
+      &&, || 
+      
+    bem como vários operadores unários 
+    
+      - para negativar um número, 
+      ! para negar logicamente e 
+      typeof para encontrar o tipo de um valor e 
+      
+    um operador ternário 
+   
+     ( ? : ) 
+    
+    para escolher um de dois valores baseados em um terceiro valor.
+
+    Isso fornece informações suficientes para usar o JavaScript como uma 
+  calculadora de bolso, mas não muito mais. O próximo capítulo começará 
+  a unir essas expressões em programas básicos.
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+

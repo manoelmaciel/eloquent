@@ -1,0 +1,32 @@
+ter 18 jun 2024 17:40:35 
+
+maciel@worknote:~/studys/js/eloquent/chapter1/docs$ node
+Welcome to Node.js v20.14.0.
+Type ".help" for more information.
+> 13
+13
+> 5 + 8
+13
+> 9.81
+9.81
+> 9 + .81
+9.81
+> console.log('Aqui no ambiente "node" ... O comportamento é diferente!');
+> console.log('A operação é interpretada ... E o resultado vem logo em seguida!');
+A operação é interpretada ... E o resultado vem logo em seguida!
+undefined
+> console.log('Aqui no ambiente "node" ... O comportamento é diferente!');
+Aqui no ambiente "node" ... O comportamento é diferente!
+undefined
+> console.log('A operação é interpretada ... E o resultado vem logo em seguida!');
+A operação é interpretada ... E o resultado vem logo em seguida!
+undefined
+> console.log('Esse "undefined" ... É por que ele sempre precisa devolver alguma coisa!');
+Esse "undefined" ... É por que ele sempre precisa devolver alguma coisa!
+undefined
+> 5.998e8
+599800000
+> .exit
+maciel@worknote:~/studys/js/eloquent/chapter1/docs$ 
+
+

@@ -1,0 +1,146 @@
+sáb 22 jun 2024 18:44:28 
+
+maciel@worknote:~/studys/js/eloquent/chapter1/tests/code/node$ node script.js
+/home/maciel/studys/js/eloquent/chapter1/tests/code/node/script.js:138
+      true e false
+           ^
+
+SyntaxError: Unexpected identifier 'e'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.14.0
+maciel@worknote:~/studys/js/eloquent/chapter1/tests/code/node$ node script.js
+13
+8.91
+599800000
+144
+1144
+Infinity
+-Infinity
+NaN
+This is the firsr line
+And this is second
+O tipo de dado de 4.5 é number
+string
+-(10 - 8) = -8
+3 > 2 é true
+3 < 2 é false
+true
+false
+maciel@worknote:~/studys/js/eloquent/chapter1/tests/code/node$ node script.js
+13
+8.91
+599800000
+144
+1144
+Infinity
+-Infinity
+NaN
+This is the firsr line
+And this is second
+O tipo de dado de 4.5 é number
+string
+-(10 - 8) = -8
+3 > 2 é true
+3 < 2 é false
+true
+false
+Operadores lógicos ( logical operators )
+&& And(E lógico)
+true
+false
+false
+false
+|| Or (Ou lógico)
+false
+true
+true
+true
+! Not (Não lógico)
+false
+true
+maciel@worknote:~/studys/js/eloquent/chapter1/tests/code/node$ node script.js
+/home/maciel/studys/js/eloquent/chapter1/tests/code/node/script.js:215
+        Nem sempre é obvio quando os parêntese são necessários. 
+            ^^^^^^
+
+SyntaxError: Unexpected identifier 'sempre'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.14.0
+maciel@worknote:~/studys/js/eloquent/chapter1/tests/code/node$ node script.js
+/home/maciel/studys/js/eloquent/chapter1/tests/code/node/script.js:286
+    Examinamos quatro tipos de valores JavaScript neste capítulo: 
+               ^^^^^^
+
+SyntaxError: Unexpected identifier 'quatro'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.14.0
+maciel@worknote:~/studys/js/eloquent/chapter1/tests/code/node$ node script.js
+13
+8.91
+599800000
+144
+1144
+Infinity
+-Infinity
+NaN
+This is the firsr line
+And this is second
+O tipo de dado de 4.5 é number
+string
+-(10 - 8) = -8
+3 > 2 é true
+3 < 2 é false
+true
+false
+Operadores lógicos ( logical operators )
+&& And(E lógico)
+true
+false
+false
+false
+|| Or (Ou lógico)
+false
+true
+true
+true
+! Not (Não lógico)
+false
+true
+1
+2
+retorno1
+retorno2
+undefined
+0
+4
+51
+NaN
+true
+true
+false
+user
+manoelmaciel
+maciel@worknote:~/studys/js/eloquent/chapter1/tests/code/node$ 
+
+

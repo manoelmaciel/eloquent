@@ -1,0 +1,110 @@
+dom 23 jun 2024 15:22:04 
+
+maciel@worknote:~/studys/js/eloquent/chapter2/tests/code/node$ node script.js
+/home/maciel/studys/js/eloquent/chapter2/tests/code/node/script.js:17
+maximo () => {
+^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.14.0
+maciel@worknote:~/studys/js/eloquent/chapter2/tests/code/node$ node script.js
+/home/maciel/studys/js/eloquent/chapter2/tests/code/node/script.js:22
+      maior = arguments[indice] else maior = arguments[indice + 1];
+                                ^^^^
+
+SyntaxError: Unexpected token 'else'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.14.0
+maciel@worknote:~/studys/js/eloquent/chapter2/tests/code/node$ node script.js
+undefined
+maciel@worknote:~/studys/js/eloquent/chapter2/tests/code/node$ node script.js
+undefined
+maciel@worknote:~/studys/js/eloquent/chapter2/tests/code/node$ node script.js
+5
+undefined
+maciel@worknote:~/studys/js/eloquent/chapter2/tests/code/node$ node script.js
+5
+undefined
+undefined
+maciel@worknote:~/studys/js/eloquent/chapter2/tests/code/node$ node script.js
+[Function: require] {
+  resolve: [Function: resolve] { paths: [Function: paths] },
+  main: {
+    id: '.',
+    path: '/home/maciel/studys/js/eloquent/chapter2/tests/code/node',
+    exports: {},
+    filename: '/home/maciel/studys/js/eloquent/chapter2/tests/code/node/script.js',
+    loaded: false,
+    children: [],
+    paths: [
+      '/home/maciel/studys/js/eloquent/chapter2/tests/code/node/node_modules',
+      '/home/maciel/studys/js/eloquent/chapter2/tests/code/node_modules',
+      '/home/maciel/studys/js/eloquent/chapter2/tests/node_modules',
+      '/home/maciel/studys/js/eloquent/chapter2/node_modules',
+      '/home/maciel/studys/js/eloquent/node_modules',
+      '/home/maciel/studys/js/node_modules',
+      '/home/maciel/studys/node_modules',
+      '/home/maciel/node_modules',
+      '/home/node_modules',
+      '/node_modules'
+    ]
+  },
+  extensions: [Object: null prototype] {
+    '.js': [Function (anonymous)],
+    '.json': [Function (anonymous)],
+    '.node': [Function (anonymous)]
+  },
+  cache: [Object: null prototype] {
+    '/home/maciel/studys/js/eloquent/chapter2/tests/code/node/script.js': {
+      id: '.',
+      path: '/home/maciel/studys/js/eloquent/chapter2/tests/code/node',
+      exports: {},
+      filename: '/home/maciel/studys/js/eloquent/chapter2/tests/code/node/script.js',
+      loaded: false,
+      children: [],
+      paths: [Array]
+    }
+  }
+}
+{
+  id: '.',
+  path: '/home/maciel/studys/js/eloquent/chapter2/tests/code/node',
+  exports: {},
+  filename: '/home/maciel/studys/js/eloquent/chapter2/tests/code/node/script.js',
+  loaded: false,
+  children: [],
+  paths: [
+    '/home/maciel/studys/js/eloquent/chapter2/tests/code/node/node_modules',
+    '/home/maciel/studys/js/eloquent/chapter2/tests/code/node_modules',
+    '/home/maciel/studys/js/eloquent/chapter2/tests/node_modules',
+    '/home/maciel/studys/js/eloquent/chapter2/node_modules',
+    '/home/maciel/studys/js/eloquent/node_modules',
+    '/home/maciel/studys/js/node_modules',
+    '/home/maciel/studys/node_modules',
+    '/home/maciel/node_modules',
+    '/home/node_modules',
+    '/node_modules'
+  ]
+}
+/home/maciel/studys/js/eloquent/chapter2/tests/code/node/script.js
+/home/maciel/studys/js/eloquent/chapter2/tests/code/node
+undefined
+5
+undefined
+undefined
+maciel@worknote:~/studys/js/eloquent/chapter2/te

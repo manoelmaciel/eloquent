@@ -1,0 +1,581 @@
+sáb 22 jun 2024 18:35:53 
+
+maciel@worknote:~$ node
+Welcome to Node.js v20.14.0.
+Type ".help" for more information.
+>         var algo;
+undefined
+>         console.log(algo);                        
+undefined
+undefined
+> var algo
+undefined
+> console.log(algo);
+undefined
+undefined
+> /*
+...      Eloquente JavaScript 
+...   
+...          Third Edition
+...                   
+...          Marijn Haverbeke
+... 
+... --------------------------------------------------------
+... Capítulo 1 - Valores, Tipos e Operadores
+... qui 20 jun 2024 14:03:51 
+... sáb 22 jun 2024 10:58:42 
+... 
+... */
+undefined
+> 
+> 
+> /* *** Valores (values)
+... 
+...     Silence is golden
+... 
+... */
+undefined
+> 
+> /* *** Números (numbers) */
+undefined
+> 
+> 
+> 13               // Inteiro
+13
+> 
+> /* Isso não faz nada.
+...    Inclusive nenhum sentido.
+...    Mas também não causa nenhum problema */
+undefined
+> 
+> console.log(13); // Isso já faz alguma coisa
+13
+undefined
+> // -> 13         // Apresenta algum resultado na tela
+undefined
+>                  // Mas já tem uma série de outras coisas envolvidas
+undefined
+> 
+> 8.91             // Fracionário
+8.91
+> 
+> /* Isso não faz nada também.
+...    Inclusive nenhum sentido como no caso anterior.
+...    Mas também não causa nenhum problema */
+undefined
+> 
+> console.log(8.91); // Isso já faz alguma coisa
+8.91
+undefined
+> // -> 8.91         // Apresenta algum resultado na tela
+undefined
+>                    // Mas já tem uma série de "outras coisas" envolvidas
+undefined
+>                    // "Essas coisas" serão discutidas mais tarde
+undefined
+> 
+> 5.998e8            // Notação científica
+599800000
+> 
+> /* Isso não faz nada também.
+...    Inclusive nenhum sentido como no caso anterior.
+...    Mas também não causa nenhum problema */
+undefined
+> 
+> console.log(5.998e8); // Isso já faz alguma coisa
+599800000
+undefined
+> // -> 599800000       // Apresenta algum resultado na tela
+undefined
+>                       // Mas já tem uma série de "outras coisas" envolvidas
+undefined
+>                       // "Essas coisas" serão discutidas mais tarde
+undefined
+> 
+> /* No JavaScript é tudo "number"
+...    Tanto faz inteiro, fracionário ou notação científica é tudo "number"
+...    E é tudo representado por 64 bits. Isso limita a linguagem.
+...    É possível trabalhar com uma faixa de mais ou menos 15 quatrilhões.
+...    O número 15 seguido de 15 zeros. Se é muito ou pouco, depende.
+...    Mas, sem dúvida, é uma quantia razoável para a maioria das necessidades. */
+undefined
+>    
+undefined
+>    
+undefined
+>   /* *** Aritmética (arithmetic) */
+undefined
+>    
+undefined
+>     console.log(100 + 4 * 11);
+144
+undefined
+>     // -> 144
+undefined
+>     
+undefined
+>     console.log((100 + 4) * 11);
+1144
+undefined
+>     // -> 1144
+undefined
+>     
+undefined
+>     /* *** Operadores aritméticos (arithmetic operators)
+...    
+...         + adição
+...         - subtração
+...         * multiplicação
+...         / divisão
+...         % resto da divisção inteira                     */
+undefined
+>         
+undefined
+> 
+>   /* *** Números especiais (special numbers)            */
+undefined
+>   
+undefined
+>     Infinity, -Infinity, NaN
+NaN
+>            
+undefined
+>     console.log(1 / 0);
+Infinity
+undefined
+>     // -> Infinity
+undefined
+>     
+undefined
+>     console.log(-1 / 0);
+-Infinity
+undefined
+>     // -> -Infinity 
+undefined
+>     
+undefined
+>     console.log(0 / 0); 
+NaN
+undefined
+>     // -> NaN
+undefined
+>     // esperava Infinity
+undefined
+>         
+undefined
+>    
+undefined
+>   /* *** Strings                                          */
+undefined
+>   
+undefined
+>       `Down on the ocean`
+'Down on the ocean'
+>       "Lie on the ocean"
+'Lie on the ocean'
+>       'Float on the ocean'
+'Float on the ocean'
+>     
+undefined
+>     /* ***  caractere de escape \ (escaping)
+...     
+...        \" - não termina a estring, faz parte dela
+...        \n - nova linha
+...        \t - tabulação                                     */
+undefined
+> 
+>     // console.log('Observe a seguinte string: ');
+undefined
+> 
+>     // console.log(`This is the first line\\nAnd this is the second`);
+undefined
+> 
+>     // console.log('O texto acima será exibido desta forma: ');
+undefined
+>     console.log("This is the firsr line\nAnd this is second")
+This is the firsr line
+And this is second
+undefined
+> 
+>     ' -> This is the first line'
+' -> This is the first line'
+>     ' -> And this is the second'
+' -> And this is the second'
+> 
+>     // Este é um exemplo do uso do \n
+undefined
+>     
+undefined
+>     "É assim que a string: " 
+'É assim que a string: '
+>     'A newline character is written "\n".'
+'A newline character is written "\n".'
+>     
+undefined
+>        
+undefined
+>   /* *** Operadores unários (unary operators)             */
+undefined
+>   
+undefined
+>     console.log('O tipo de dado de 4.5 é ' + typeof 4.5);
+O tipo de dado de 4.5 é number
+undefined
+>     `-> number`
+'-> number'
+>     
+undefined
+>     console.log(typeof "x");
+string
+undefined
+>     `-> string`
+'-> string'
+>     
+undefined
+>     console.log('-(10 - 8) = ' + -(10 - 2));
+-(10 - 8) = -8
+undefined
+>     `-> -8`
+'-> -8'
+>       
+undefined
+>   /* *** Valores booleanos (boolean values)                
+...   
+...       true e false                                          */
+undefined
+>   
+undefined
+>     /* *** Comparação                                       */
+undefined
+>     
+undefined
+>     console.log('3 > 2 é ' + (3 > 2));
+3 > 2 é true
+undefined
+>     `-> true`
+'-> true'
+> 
+>     console.log('3 < 2 é ' + (3 < 2));
+3 < 2 é false
+undefined
+>     `-> false`
+'-> false'
+> 
+>     /* *** Strings podem ser comparadas                     */
+undefined
+>    
+undefined
+>     console.log("Aardvark" < "Zoroaster")
+true
+undefined
+>     // → true
+undefined
+>     
+undefined
+>     /* *** Operadores de comparação                         
+...         
+...          < > >= <= == != === !==                                */
+undefined
+> 
+>     /* *** O único operador que não é igual a si mesmo é o   
+...         
+...       NaN                                                      */
+undefined
+>         
+undefined
+>         console.log(NaN == NaN);
+false
+undefined
+>         // -- false
+undefined
+> 
+>     console.log("Operadores lógicos ( logical operators )"); 
+Operadores lógicos ( logical operators )
+undefined
+>     /* *** Operadores lógicos (logical operators)
+...         
+...         &&   ||   !                                               */
+undefined
+>         
+undefined
+>       /* O operador && (And) representa o E lógico. 
+...          É um operador binário e seu resultado é verdadeiro somente se 
+...          ambos os valores dados a ele forem verdadeiros. */
+undefined
+>         
+undefined
+>         console.log('&& And(E lógico)');
+&& And(E lógico)
+undefined
+>         console.log(true && true);
+true
+undefined
+>         // -> true
+undefined
+> 
+>         console.log(true && false);
+false
+undefined
+>         // -> false
+undefined
+> 
+>         console.log(false && true);
+false
+undefined
+>         // -> false
+undefined
+> 
+>         console.log(false && false);
+false
+undefined
+>         // -> false
+undefined
+> 
+>       /* O operador || (Ou) representa o E lógico. 
+...          É um operador binário e seu resultado é verdadeiro somente se 
+...          ambos os valores dados a ele forem verdadeiros. */
+undefined
+>         
+undefined
+>         console.log('|| Or (Ou lógico)');
+|| Or (Ou lógico)
+undefined
+>         console.log(false || false);
+false
+undefined
+>         // -> false
+undefined
+> 
+>         console.log(false || true);
+true
+undefined
+>         // -> true
+undefined
+> 
+>         console.log(true || false);
+true
+undefined
+>         // -> true
+undefined
+> 
+>         console.log(true || true);
+true
+undefined
+>         // -> true
+undefined
+> 
+>  
+undefined
+>         /* O Não é escrito como um ponto de exclamação !. 
+...            É um operador unário que inverte o valor dado a ele. 
+...            !true produz false e !false resulta em true. */
+undefined
+> 
+>         console.log('! Not (Não lógico)');
+! Not (Não lógico)
+undefined
+>         console.log(!true);
+false
+undefined
+>         // -> false
+undefined
+> 
+>         console.log(!false);
+true
+undefined
+>         // -> true
+undefined
+> 
+>         /* Nem sempre é obvio quando os parêntese são necessários. 
+...         A ordem foi escolhida de forma que em expressões típicas
+...         como a seguinte, seja necessário o mínimo de parênteses: */
+undefined
+>         
+undefined
+>           1 + 1 == 2 && 10 * 10 > 50
+true
+>           
+undefined
+> 
+>         /* O último operador lógico que discutirei não é unário, 
+...         nem binário, mas ternário, operando em três valores. 
+...         É escrito com um ponto de interrogação e dois pontos, desta forma: */
+undefined
+> 
+>           console.log(true ? 1 : 2);
+1
+undefined
+>           // → 1
+undefined
+>           console.log(false ? 1 : 2);
+2
+undefined
+>           // → 2
+undefined
+>  
+undefined
+>     // Operador condicional
+undefined
+>     // Operardor lógico ternário (resultadoLógico ? retorno1 : retorno2)
+undefined
+>     
+undefined
+>         console.log(true ? 'retorno1' : 'retorno2');
+retorno1
+undefined
+>         // → 1
+undefined
+>         console.log(false ? 'retorno1' : 'retorno2');
+retorno2
+undefined
+>         // → 2
+undefined
+>         
+undefined
+>     // Valores vazios
+undefined
+>            
+undefined
+>         undefined 
+undefined
+>            
+undefined
+>         null
+null
+>            
+undefined
+>         /* A diferença de significado entre undefined e null é um acidente do  
+...            design do JavaScript e não importa na maioria das vezes. Nos casos 
+...            em que você realmente precisa se preocupar com esses valores, 
+...            recomendo tratá-los como intercambiáveis. */
+undefined
+>               
+undefined
+>           var algo;
+undefined
+>           console.log(algo);                        
+undefined
+undefined
+>           // -> aparetemente não faz nada
+undefined
+>             
+undefined
+> 
+>      // Conversão automática de tipo
+undefined
+> 
+>         console.log(8 * null)
+0
+undefined
+>         // → 0
+undefined
+>         console.log("5" - 1)
+4
+undefined
+>         // → 4
+undefined
+>         console.log("5" + 1)
+51
+undefined
+>         // → 51
+undefined
+>         console.log("five" * 2)
+NaN
+undefined
+>         // → NaN
+undefined
+>         console.log(false == 0)
+true
+undefined
+>         // → true
+undefined
+> 
+> 
+>         console.log(null == undefined);
+true
+undefined
+>         // → true
+undefined
+>         console.log(null == 0);
+false
+undefined
+>         // → false
+undefined
+> 
+> 
+>       // Curto-circuito de operadores lógicos
+undefined
+>       // avaliação de curto-circuito (short-circuit evaluation)
+undefined
+>       
+undefined
+>         console.log(null || "user");
+user
+undefined
+>         // -> user
+undefined
+>         
+undefined
+>         console.log("manoelmaciel" || "user");
+manoelmaciel
+undefined
+>         // -> manoelmaciel
+undefined
+> 
+>   /*
+...   Resumo
+... 
+...     Examinamos quatro tipos de valores JavaScript neste capítulo: 
+...     
+...       números, strings, booleanos e valores indefinidos.
+... 
+...     Esses valores são criados digitando seu nome ou valor
+...     
+...       13, "abc", true, null ou undefined 
+...        
+...     Você pode combinar e transformar valores com operadores. 
+...     
+...     Vimos operadores binários para aritmética 
+...       
+...         +, -, *, / e %  
+...         
+...     concatenação de strings (+), 
+...       
+...     comparação 
+...     
+...       ==, !=, ===, !==, <, >, <=, >= 
+...       
+...     e lógica 
+...     
+...       &&, || 
+...       
+...     bem como vários operadores unários 
+...     
+...       - para negar um número, 
+...       ! para negar logicamente e 
+...       typeof para encontrar o tipo de um valor e 
+...       
+...     um operador ternário 
+...    
+...      (?:) 
+...     
+...     para escolher um dos dois valores baseados em um terceiro valor.
+... 
+...     Isso fornece informações suficientes para usar o JavaScript como uma 
+...   calculadora de bolso, mas não muito mais. O próximo capítulo começará 
+...   a unir essas expressões em programas básicos. */
+undefined
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+
+

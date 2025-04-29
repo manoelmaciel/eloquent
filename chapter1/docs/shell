@@ -1,0 +1,85 @@
+sáb 08 jun 2024 22:44:52 
+
+maciel@worknote:~$ node 
+Welcome to Node.js v20.14.0.
+Type ".help" for more information.
+
+*** Números ( Numbers )
+
+> 13
+13
+
+> 9.81
+9.81
+
+> 2.998e8
+299800000
+
+
+*** Aritmética
+
+> 100 + 4 * 11
+144
+
+> (100 + 4) * 11
+1144
+
+
+*** Precedência
+
+> 1 - 2 + 1
+0
+
+> 314 % 100
+14
+
+> 144 % 12
+0
+
+
+*** Números especiais
+
+
+
+
+> `Down on the sea`
+'Down on the sea'
+
+> "lie on the ocean"
+'lie on the ocean'
+
+> 'Float on the ocean'
+'Float on the ocean'
+
+> Lie on the ocean
+Lie on the ocean
+    ^^
+
+Uncaught SyntaxError: Unexpected identifier 'on'
+
+> "This is the first line\nAnd this is the second"
+'This is the first line\nAnd this is the second'
+
+> "This is the first line \n And this is the second"
+'This is the first line \n And this is the second'
+
+> This is the first line \n And this is the second
+This is the first line \n And this is the second
+     ^^
+
+Uncaught SyntaxError: Unexpected identifier 'is'
+
+> `This is the first line \n And this is the second`
+'This is the first line \n And this is the second'
+
+> 'This is the first line \n And this is the second'
+'This is the first line \n And this is the second'
+
+> "This is the first line \n And this is the second"
+'This is the first line \n And this is the second'
+> 
+
+
+
+
+

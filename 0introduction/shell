@@ -1,0 +1,17 @@
+dom 06 abr 2025 23:14:40 
+
+maciel@worknote: ~$ node
+Welcome to Node.js v12.22.9.
+Type ".help" for more information.
+> let total = 0, count = 1; 
+undefined
+> while(count <= 10) { total += count; count += 1; } 
+11
+> console.log(total);
+55
+undefined
+> 
+
+
+
+

@@ -1,0 +1,29 @@
+20:19:28.407 Unknown property ‘-moz-osx-font-smoothing’.  Declaration dropped. activity-stream.css:323:27
+20:19:28.428 GET
+https://firefox-settings-attachments.cdn.mozilla.net/main-workspace/newtab-wallpapers-v2/10e23599-85bc-4660-ae06-7a67befbbcf9.avif
+[HTTP/1.1 200 OK 0ms]
+
+20:19:46.485 function factorial(n) {
+  if (n == 0) {
+    return 1;
+  } else {
+    return factorial(n - 1) * n;…
+20:19:46.541 undefined
+20:20:06.019 fatorial(10);
+20:20:06.051 Uncaught ReferenceError: fatorial is not defined
+    <anonymous> debugger eval code:1
+debugger eval code:1:1
+20:20:21.884 function factorial(n) {
+  if (n == 0) {
+    return 1;
+  } else {
+    return factorial(n - 1) * n;
+  }
+}
+20:20:21.942 undefined
+20:20:44.907 function factorial(n) {
+  if (n == 0) {
+    return 1;
+  } else {
+    return factorial(n - 1) * n;…
+20:20:44.955 3628800

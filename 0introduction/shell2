@@ -1,0 +1,24 @@
+dom 06 abr 2025 23:46:48 
+
+maciel@worknote: chapter0$ date
+dom 06 abr 2025 23:16:46 -03
+maciel@worknote: chapter0$ pwd
+/home/maciel/studys/front/js/eloquent/chapter0
+maciel@worknote: chapter0$ ls
+00-chapter-0-introduction.md          notes   program  resumo~    shell
+console-export-2025-4-2_20-28-31.txt  notes~  resumo   script.js
+maciel@worknote: chapter0$ 
+maciel@worknote: chapter0$ node script.js 
+55
+maciel@worknote: chapter0$ node script.js 
+55
+maciel@worknote: chapter0$ 
+maciel@worknote: chapter0$ pwd
+/home/maciel/studys/front/js/eloquent/chapter0
+maciel@worknote: chapter0$ ls
+00-chapter-0-introduction.md          notes   program  resumo~    shell
+console-export-2025-4-2_20-28-31.txt  notes~  resumo   script.js
+maciel@worknote: chapter0$ date
+dom 06 abr 2025 23:19:15 -03
+maciel@worknote: chapter0$ 
+

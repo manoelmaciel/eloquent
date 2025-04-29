@@ -1,0 +1,135 @@
+     Eloquente JavaScript 
+  
+         Third Edition
+                  
+         Marijn Haverbeke
+
+--------------------------------------------------------
+Capítulo  2 - Estrutura do Programa
+
+ter 25 jun 2024 20:41:18 
+
+maciel@worknote:~$ node 
+Welcome to Node.js v20.14.0.
+Type ".help" for more information.
+
+> 1;
+1
+
+> !false;
+true
+
+> let caught = 5 * 5;
+undefined
+
+> caught
+25
+
+> let dez = 10;
+undefined
+
+> dez * dez
+100
+
+> let mood = 'light';
+undefined
+
+> mood
+'light'
+
+> mood = dark;
+Uncaught ReferenceError: dark is not defined
+
+*** Faltou colocar dark entre aspas
+
+> mood = 'dark';
+'dark'
+
+> let luigisDebt = 140;
+undefined
+
+> luigisDebt = luigisDebt - 35;
+105
+
+> var name = "Ayda";
+undefined
+
+> const greeting = "Hello ";
+undefined
+
+> console.log(greeting + name);
+Hello Ayda
+undefined
+> // → Hello Ayda
+undefined
+
+> let x = 30;
+undefined
+
+> console.log(x);
+30
+undefined
+
+> console.log(Math.max(2, 4);
+console.log(Math.max(2, 4);
+                         ^
+
+Uncaught SyntaxError: missing ) after argument list
+
+*** Faltou colocar um parêntese 
+
+> console.log(Math.max(2, 4));
+4
+undefined
+
+> console.log(Math.min(2, 4) + 100);
+102
+undefined
+
+> let theNumber = Number(prompt("Pick a number"));
+Uncaught ReferenceError: prompt is not defined
+
+*** Prompt não existe no ambiente Node
+
+> let theNumber = 5;
+Uncaught SyntaxError: Identifier 'theNumber' has already been declared
+
+> theNumber = 5;
+Uncaught ReferenceError: Cannot access 'theNumber' before initialization
+
+> oNumero = 5;
+5
+
+> console.log("Seu número 'a raiz quadrada de ", *=oNumero);
+console.log("Seu número 'a raiz quadrada de ", *=oNumero);
+                                               ^^
+
+Uncaught SyntaxError: Unexpected token '*='
+
+*** Não funcionou o *=
+
+> console.log("Seu número 'a raiz quadrada de ", oNumero * oNumero);
+Seu número 'a raiz quadrada de  25
+undefined
+
+> console.log("Seu número é a raiz quadrada de ", oNumero * oNumero);
+Seu número é a raiz quadrada de  25
+undefined
+
+> console.log("O seu número é a raiz quadrada de ", oNumero * oNumero);
+O seu número é a raiz quadrada de  25
+undefined
+
+> console.log("O seu número é a raiz quadrada de ",oNumero * oNumero, ".");
+O seu número é a raiz quadrada de  25 .
+undefined
+
+> console.log("O seu número é a raiz quadrada de ",oNumero * oNumero,".");
+O seu número é a raiz quadrada de  25 .
+undefined
+
+> 
+
+*** Faltou sair do ambiente Node
+
+
